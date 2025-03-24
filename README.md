@@ -10,7 +10,11 @@ This project is written in Rust and can be compiled with Cargo as follows
 
     cargo build --release
 
-This will create a binary under target/release/lod-cloud-draw that can be used 
+For `lod-cloud-site` use the following command:
+
+    RUSTFLAGS="-C target-feature=+crt-static" cargo build --target x86_64-unknown-linux-gnu --release
+
+This will create a binary under `target/x86_64-unknown-linux-gnu/release/lod-cloud-draw` that can be used 
 to create cloud diagrams
 
 ### Requirements
